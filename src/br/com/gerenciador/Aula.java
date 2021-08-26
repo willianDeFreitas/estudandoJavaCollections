@@ -6,7 +6,6 @@ public class Aula implements Comparable<Aula>{
 	private int tempo;
 	
 	public Aula(String titulo, int tempo) {
-		super();
 		this.titulo = titulo;
 		this.tempo = tempo;
 	}
