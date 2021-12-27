@@ -2,7 +2,7 @@ package br.com.gerenciador;
 
 public class TestaCursoComAluno {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Curso javaColecoes = new Curso("Dominando as coleções do Java", "Paulo Silveira");
 
 		javaColecoes.adiciona(new Aula("Trabalhando com ArrayList", 21));
