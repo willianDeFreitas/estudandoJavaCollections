@@ -1,8 +1,6 @@
 package br.com.gerenciador;
 
-import java.util.Vector;
-
-public class TestaCursoComAluno {
+public class TestaBuscaAlunosNoCurso {
 
 	public static void main(String[] args) throws Exception {
 		Curso javaColecoes = new Curso("Dominando as coleções do Java", "Paulo Silveira");
@@ -19,24 +17,9 @@ public class TestaCursoComAluno {
 		javaColecoes.matricula(a2);
 		javaColecoes.matricula(a3);
 		
-		Vector<Aluno> vetor = new Vector<>();
-		
-//		Set<Aluno> alunos = javaColecoes.getAlunos();
-//		Iterator<Aluno> iterator = alunos.iterator();
-//		while(iterator.hasNext()) {
-//			Aluno proximo = iterator.next();
-//			System.out.println(proximo);
-//		}
-		
-//		for (Aluno a : javaColecoes.getAlunos()) {
-//			System.out.println(a);
-//		}
-		
-//		System.out.println("Todos matriculados: ");
-//		javaColecoes.getAlunos().forEach(a -> {
-//			System.out.println(a);
-//		});
-		
-		System.out.println(javaColecoes.estaMatriculado(a1));
+		System.out.println(javaColecoes.getAlunos());
+		System.out.println("Quem é o aluno com matricula 5617?");
+		Aluno alunoM = javaColecoes.buscaMatriculado(5617);
+		System.out.println(alunoM);
 	}
 }

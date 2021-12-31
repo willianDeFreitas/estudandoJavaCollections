@@ -5,9 +5,9 @@ import java.util.Objects;
 public class Aluno {
 
 	private String nome;
-	private String numeroMatricula;
+	private int numeroMatricula;
 	
-	public Aluno(String nome, String numeroMatricula) throws Exception {
+	public Aluno(String nome, int numeroMatricula) throws Exception {
 		if (nome == null) {
 			throw new NullPointerException("Nome não pode ser nulo!");
 		}
@@ -19,7 +19,7 @@ public class Aluno {
 		return nome;
 	}
 
-	public String getNumeroMatricula() {
+	public int getNumeroMatricula() {
 		return numeroMatricula;
 	}
 	
